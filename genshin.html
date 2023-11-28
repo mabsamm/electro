@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENSHIN IMPACT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: -2px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #logo,
+    #download-button,
+    #moving-image,
+    #button-container-top,
+    #button-container-bottom {
+      position: absolute;
+      z-index: 1;
+    }
+
+    #logo {
+      top: 20px;
+      left: -80px;
+      max-width: 430px;
+      max-height: 430px;
+    }
+
+    #download-button {
+      width: 130px !important;
+      min-width: 0 !important;
+      top: 20px;
+      right: 50px;
+    }
+
+    #download-button img {
+      width: 100% !important;
+      height: auto;
+    }
+
+    #moving-image {
+      top: 40%;
+      left: 4%;
+      max-width: 850px;
+      transform: translate(0%, -50%);
+    }
+
+    #search-bar {
+      background-color: #ffffff; /* Color de fondo blanco */
+      border: none;
+      outline: none;
+      padding: 10px;
+      color: black; /* Color del texto negro para mejorar la visibilidad */
+      font-size: 16px;
+      position: absolute;
+      font-family: serif;
+      top: 19px;
+      right: 200px;
+      width: 250px;
+      height: 25px;
+      border-radius: 50px; /* Bordes redondeados */
+      transition: background 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    }
+
+    #search-bar::placeholder {
+      color: #999; /* Color del marcador de posición gris */
+    }
+
+    #search-bar:focus {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.674); /* Efecto de sombra al enfocar */
+      background-color: #f5f5f5; /* Cambio de color al enfocar */
+    }
+
+    .button {
+      width: 230px; /* Tamaño más pequeño */
+      margin: 5px;
+    }
+
+    .button img {
+      width: 100%; /* Ajuste para que la imagen ocupe todo el espacio del botón */
+    }
+
+    .button-container {
+      display: flex;
+      position: absolute;
+      left: 130px;
+    }
+
+    .button-container-left {
+      top: 480px;
+    }
+
+    .button-container-right {
+      top: 594px;
+    }
+  </style>
+</head>
+<body>
+  <video id="video-background" autoplay loop muted>
+    <source src="https://drive.google.com/uc?export=download&id=1MOFz0yDQT1AS7WsKdkBSamWtbNcnZ3uW" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+
+  <img id="logo" src="https://drive.google.com/uc?export=view&id=1gMWztwEgKx_gsQjFgCy0v4kvo8UYeMT6" alt="Logo">
+  <a id="download-button" href="https://genshin.hoyoverse.com/pc-launcher/?utm_source=GS-LA-PC-X-search-keywords-classic-20230128-lowbid&mhy_trace_channel=ga_channel&new=1&gad_source=1&gclid=CjwKCAiA04arBhAkEiwAuNOsIqe6bfeS3OIXoHAUIUG1ZTSuynpLX9ObjleO7jzYdnmm6dFJQUO9WRoCZacQAvD_BwE#/" target="_blank">
+    <img src="https://drive.google.com/uc?export=view&id=1wTFs_KhO6Uqh9h4bf_BeSA77P17XVKLh" alt="Boton Descarga">
+  </a>
+  <img id="moving-image" src="https://drive.google.com/uc?export=view&id=1QPJgzdDMNYe9y7S2eddv10enhfFc8ist" alt="Moving Image">
+  <input type="text" id="search-bar" placeholder="Buscar personajes..."> <!-- Cambiado el texto del marcador de posición -->
+
+  <!-- Botones izquierdos -->
+  <div class="button-container button-container-left">
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=1b7-3iuGrLLswuqSRSNcfgl70zbbAmckM" alt="Boton 1"></div>
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=1Dys3LbJQnQUtc8acF26HL0xi6hNGqUVi" alt="Boton 2"></div>
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=180JgVjnDfcC__5xwktQNyTv2RSZLO2VR" alt="Boton 3"></div>
+  </div>
+
+  <!-- Botones derechos -->
+  <div class="button-container button-container-right">
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=1-tS0hrGHOwwlcVq1jIri2EG-GVRmqoVz" alt="Boton 4"></div>
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=12DdxsT0M8PPH_MVi37KHkjymDPz0EgO2" alt="Boton 5"></div>
+    <div class="button"><img src="https://drive.google.com/uc?export=view&id=1OJwTOjZXsEGZo0bqr7PcDPk6OdE7fM8-" alt="Boton 6"></div>
+  </div>
+</body>
+</html>
